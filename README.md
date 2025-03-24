@@ -71,7 +71,7 @@ content = """
     </table>
      </body>
     </html>
-"""
+```
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -83,6 +83,7 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
+```
 # OUTPUT:
 ![screenshot 123e35fytrt75](https://github.com/user-attachments/assets/2e6500d5-ea36-422a-814a-a916c5a73d54)
 ![screen shot 45we654df67](https://github.com/user-attachments/assets/71cfc817-2c25-4c7c-9c08-6f98eb10cade)
